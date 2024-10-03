@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test-ts": "ts-node typage.ts",
     "serve:ssr:tp-crm-groupe-1-front": "node dist/tp-crm-groupe-1-front/server/server.mjs"
   },
   "private": true,
