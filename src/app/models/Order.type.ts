@@ -1,6 +1,6 @@
 import { CustomerType } from "./Customer.type";
 
-export type Order = {
+export type OrderType = {
     id: number;
     serviceType: string;
     nbDays: number;
