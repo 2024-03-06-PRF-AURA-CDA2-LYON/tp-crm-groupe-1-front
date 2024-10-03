@@ -1,5 +1,7 @@
+export type CustomerState = 'ACTIVE' | 'INACTIVE';
+
 export type CustomerType = {
-  id: number;
+  id?: number;
   companyName: string;
   firstName: string;
   lastName: string;
@@ -9,5 +11,5 @@ export type CustomerType = {
   zipCode: string;
   city: string;
   country: string;
-  state: string;
+  state: CustomerState;
 }
