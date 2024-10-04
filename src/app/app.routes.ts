@@ -3,6 +3,6 @@ import {OrdersListComponent} from "./components/orders/orders-list/orders-list.c
 
 export const routes: Routes = [
   {
-    path: 'orders', component: OrdersListComponent
+    path: '', component: OrdersListComponent
   }
 ];
