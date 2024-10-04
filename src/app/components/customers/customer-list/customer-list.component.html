@@ -1,0 +1,33 @@
+<h5>Liste des Clients</h5>
+<table border="1">
+  <thead>
+  <tr>
+  <th>ID</th>
+  <th>Société</th>
+  <th>Prénom</th>
+  <th>Nom</th>
+  <th>Email</th>
+  <th>Téléphone</th>
+  <th>Adresse</th>
+  <th>ZipCode</th>
+  <th>Pays</th>
+  <th>Ville</th>
+  <th>Etat</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of (customers$ | async)">
+  <td>{{ customer.id }}</td>
+  <td>{{ customer.companyName }}</td>
+  <td>{{ customer.firstName }}</td>
+  <td>{{ customer.lastName }}</td>
+  <td>{{ customer.email }}</td>
+  <td>{{ customer.phoneNumber }}</td>
+  <td>{{ customer.address }}</td>
+  <td>{{ customer.zipCode }}</td>
+  <td>{{ customer.country }}</td>
+  <td>{{ customer.city }}</td>
+  <td>{{ customer.state }}</td>
+  </tr>
+  </tbody>
+</table>

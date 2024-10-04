@@ -1,0 +1,57 @@
+<h5>Formulaire :</h5>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+  <div>
+    <label for="firstName" class="">Prénom : </label>
+    <input type="text" id="firstName" name="firstName" formControlName="firstName" class="">
+  </div>
+  <div>
+    <label for="lastName" class="">Nom : </label>
+    <input type="text" id="lastName" name="lastName" formControlName="lastName" class="">
+  </div>
+  <div>
+    <label for="companyName" class="">Société : </label>
+    <input type="text" id="companyName" name="companyName" formControlName="companyName" class="">
+  </div>
+  <div>
+    <label for="password" class="">Mot de Passe : </label>
+    <input type="password" id="password" name="password" formControlName="password" class="">
+  </div>
+  <div>
+    <label for="email" class="">Email : </label>
+    <input type="email" id="email" name="email" formControlName="email" class="">
+  </div>
+  <div>
+    <label for="address" class="">Adresse : </label>
+    <input type="text" id="address" name="address" formControlName="address" class="">
+  </div>
+  <div>
+    <label for="country" class="">Pays : </label>
+    <input type="text" id="country" name="country" formControlName="country" class="">
+  </div>
+  <div>
+    <label for="city" class="">Ville : </label>
+    <input type="text" id="city" name="city" formControlName="city" class="">
+  </div>
+  <div>
+    <label for="state" class="">Etat : </label>
+    <select id="state" formControlName="state">
+      <option value="ACTIVE">ACTIVE</option>
+      <option value="INACTIVE">INACTIVE</option>
+    </select>
+  </div>
+  <div>
+    <label for="phoneNumber" class="">Téléphone : </label>
+    <input type="text" id="phoneNumber" name="phoneNumber" formControlName="phoneNumber" class="">
+  </div>
+  <div>
+    <label for="zipCode" class="">Zip Code : </label>
+    <input type="text" id="zipCode" name="zipCode" formControlName="zipCode" class="">
+  </div>
+  <div>
+    <label for="order" class="">Order : </label>
+    <input type="text" id="order" name="order" formControlName="order" class="">
+  </div>
+  <div>
+    <button type="submit">Envoyer</button>
+  </div>
+</form>

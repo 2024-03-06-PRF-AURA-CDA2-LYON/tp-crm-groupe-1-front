@@ -1,3 +1,5 @@
+import {Order} from "./Order.type";
+
 export type CustomerState = 'ACTIVE' | 'INACTIVE';
 
 export type CustomerType = {
@@ -12,4 +14,5 @@ export type CustomerType = {
   city: string;
   country: string;
   state: CustomerState;
+  order?: Order;
 }
