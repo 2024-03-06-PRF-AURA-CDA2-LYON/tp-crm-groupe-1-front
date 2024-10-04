@@ -10,6 +10,6 @@ export type OrderType = {
     totalExcludeTax: number;
     state: OrderState;
     comment?: string;
-    customer: CustomerType;
+    customer?: CustomerType;
 }
 
