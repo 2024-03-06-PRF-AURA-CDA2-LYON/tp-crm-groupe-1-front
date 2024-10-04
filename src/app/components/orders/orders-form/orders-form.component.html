@@ -1,0 +1,38 @@
+<h2>Ajout d'une prestation</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+  <div>
+    <label for="serviceType">Type de Service : </label>
+    <input type="text" id="serviceType" name="serviceType" formControlName="serviceType" />
+  </div>
+  <div>
+    <label for="nbDays">Nombre de jours : </label>
+    <input type="number" id="nbDays" name="nbDays" formControlName="nbDays" />
+  </div>
+  <div>
+    <label for="tva">TVA : </label>
+    <input type="number" id="tva" name="tva" formControlName="tva" />
+  </div>
+  <div>
+    <label for="totalExcludeTax">Prix total avec Exclusion de Taxe : </label>
+    <input type="number" id="totalExcludeTax" name="totalExcludeTax" formControlName="totalExcludeTax" />
+  </div>
+  <div>
+    <label for="state">État : </label>
+    <select id="state" formControlName="state">
+      <option value="CONFIRMED">CONFIRMED</option>
+      <option value="OPTION">OPTION</option>
+      <option value="CANCELLED">CANCELLED</option>
+    </select>
+  </div>
+  <div>
+    <label for="comment">Commentaire : </label>
+    <textarea id="comment" name="comment" formControlName="comment"></textarea>
+  </div>
+  <div>
+    <label for="customer">Client : </label>
+    <input type="text" id="customer" name="customer" formControlName="customer" />
+  </div>
+  <div>
+    <button type="submit" [disabled]="form.invalid">Envoyer</button>
+  </div>
+</form>
