@@ -14,5 +14,4 @@ export type CustomerType = {
   city: string;
   country: string;
   state: CustomerState;
-  order?: OrderType;
 }

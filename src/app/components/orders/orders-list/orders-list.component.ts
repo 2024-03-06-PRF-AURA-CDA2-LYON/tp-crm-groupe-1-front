@@ -2,12 +2,14 @@ import {Component, OnInit} from '@angular/core';
 import {NgForOf} from "@angular/common";
 import {OrderType} from "../../../models/Order.type";
 import {OrderService} from "../../../services/order.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-orders-list',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './orders-list.component.html',
   styleUrl: './orders-list.component.css'

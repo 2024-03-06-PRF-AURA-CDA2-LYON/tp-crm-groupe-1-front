@@ -3,13 +3,15 @@ import { BehaviorSubject, type Observable } from 'rxjs';
 import {CustomerService} from "../../../services/customer.service";
 import {CustomerType} from "../../../models/Customer.type";
 import {AsyncPipe, NgForOf} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-customer-list',
   standalone: true,
   imports: [
     AsyncPipe,
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './customer-list.component.html',
   styleUrl: './customer-list.component.css'

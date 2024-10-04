@@ -1,28 +1,33 @@
 <div class="container">
-  <h2>Liste des prestations</h2>
+  <h2>Liste des Prestations</h2>
 
-  <table border="1">
+  <div class="button-group">
+    <button class="btn add-btn" routerLink="/orders/form">Ajouter une Prestation</button>
+    <button class="btn list-btn" routerLink="/customers">Liste des Clients</button>
+  </div>
+
+  <table class="styled-table">
     <thead>
-      <tr>
-        <th>ID</th>
-        <th>Type de service</th>
-        <th>Nombre de jours</th>
-        <th>TVA</th>
-        <th>Total hors taxe</th>
-        <th>État</th>
-        <th>Commentaire</th>
-      </tr>
+    <tr>
+      <th>ID</th>
+      <th>Type de Service</th>
+      <th>Nombre de Jours</th>
+      <th>TVA</th>
+      <th>Total HT</th>
+      <th>État</th>
+      <th>Commentaire</th>
+    </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let order of orders">
-        <td>{{ order.id }}</td>
-        <td>{{ order.serviceType }}</td>
-        <td>{{ order.nbDays }}</td>
-        <td>{{ order.tva }}</td>
-        <td>{{ order.totalExcludeTax }}</td>
-        <td>{{ order.state }}</td>
-        <td>{{ order.comment || 'N/A' }}</td>
-      </tr>
+    <tr *ngFor="let order of orders">
+      <td>{{ order.id }}</td>
+      <td>{{ order.serviceType }}</td>
+      <td>{{ order.nbDays }}</td>
+      <td>{{ order.tva }}</td>
+      <td>{{ order.totalExcludeTax }}</td>
+      <td>{{ order.state }}</td>
+      <td>{{ order.comment || 'N/A' }}</td>
+    </tr>
     </tbody>
   </table>
 </div>
